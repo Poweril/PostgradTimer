@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/settings/settings",
+    "pages/colors/colors",
+    "pages/charts/pie/pie",
+    "pages/info/info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#199475",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/index.png",
+      "selectedIconPath": "image/index_gr.png",
+      "text": "主页"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "iconPath": "image/logs.png",
+      "selectedIconPath": "image/logs_gr.png",
+      "text": "记录"
+    }, {
+      "pagePath": "pages/settings/settings",
+      "iconPath": "image/settings.png",
+      "selectedIconPath": "image/settings_gr.png",
+      "text": "设置"
+    },
+    {
+      "pagePath": "pages/info/info",
+      "iconPath": "image/info.png",
+      "selectedIconPath": "image/info_gr.png",
+      "text": "资讯"
+    },
+    {
+      "pagePath": "pages/charts/pie/pie",
+      "iconPath": "image/charts.png",
+      "selectedIconPath": "image/charts_gr.png",
+      "text": "图表"
+    }
+    ]
+  }
+}

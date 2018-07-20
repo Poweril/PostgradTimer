@@ -1,0 +1,69 @@
+<view class="container timer {{isRuning ? 'timer--runing': ''}}">
+  <view class="timer_main" style="background-color:{{bgColor}}" >	
+    <view class="timer_time-wrap">
+      <view class="timer_progress_mask"></view>
+      <view class="timer_progress timer_left">
+        <view class="timer_circle timer_circle--left" style="transform: rotate({{leftDeg}}deg);"></view>
+      </view>
+      <view class="timer_progress timer_right">
+        <view class="timer_circle timer_circle--right" style="transform: rotate({{rightDeg}}deg);"></view>
+      </view>
+      <text wx:if="{{!completed}}" class="timer_time">{{remainTimeText}}</text>
+      <text 
+        wx:if="{{isRuning}}" 
+        animation="{{nameAnimation}}" 
+        class="timer_taskName">{{taskName}}{{completed ? '已完成！' : '中'}}</text>
+      <image 
+        wx:if="{{completed}}" 
+        class="timer_done" 
+        src="../../image/complete.png"></image>
+    </view>
+    <view class="timer_input">
+      <input 
+        type="text" 
+        placeholder-style="text-align:center" 
+        class="timer_inputText"
+        bindinput="addTag"
+        value="{{logName}}"
+        placeholder="添加新的学习任务"></input>
+      <view
+        bindtap='submitTag'
+        class="timer_inputbtn">确认</view>
+    </view>
+  </view>
+	
+  <!-- hide when running -->
+  <view class="settings">
+    <view class="timer_footer">
+      <view class="tags">
+        <view
+          wx:for="{{tagsList}}"
+          wx:key="logName"
+          bindtap='startTimer'
+          bindlongpress='deleteTag'
+          data-logname="{{item.logName}}"
+          class="timer_ctrl {{isRuning && (timerType != item.logName ) ? 'hide' : ''}}" >{{completed ? '已完成' : ''}}{{!completed && isRuning ? '提前结束': ''}}{{item.logName}}</view>
+      </view>
+      <view class="rest">
+        <view
+          bindtap="startTimer"
+          wx:key="logName"
+          data-logname="休息"
+          class="timer_ctrl {{isRuning && (timerType != '休息') ? 'hide' : ''}}" >{{completed ? '已完成' : ''}}{{!completed && isRuning ? '提前结束': '休息'}}</view>      
+      </view>
+    </view>
+  </view>
+  <view class="section_body">
+    <slider
+      wx:if="{{!isRuning}}"
+      class="section_body"
+      placeholder-style="text-align:center"
+      bindchange="changeWorkTime" 
+      show-value="true" 
+      min="1"
+      max="60"
+      value="{{workTime}}"
+      left-icon="cancel" 
+      right-icon="success_no_circle"/>
+  </view>
+</view>

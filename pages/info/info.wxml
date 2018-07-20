@@ -1,0 +1,49 @@
+<view>
+  <swiper indicator-dots='true' autoplay='true'>
+    <swiper-item>
+      <image src="../../image/schedule.jpg" mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/checklist.jpg" mode='aspectFill'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/motto.jpg" mode='aspectFill'></image>
+    </swiper-item>
+  </swiper>
+
+  <view class='posts-container'>
+    <view class='posts-author-date'>
+      <image src="../../image/notice.png"></image>
+      <text>Jul 10 2018</text>
+    </view>
+    <text class='posts-title'>2019考研报名时间</text>
+    <image class='posts-image' src="../../image/calendar.jpg" mode='widthFix'></image>
+    <text class='posts-content'>2018年9月中旬：
+全国硕士研究生入学考试网上预报名，考生可以在网上进行预报名。
+该阶段考生注意事项：了解报名流程、选择好报考院校专业(只能选择一所院校一个专业)</text>
+    <view class='posts-like'>
+      <image src="../../image/chat.png"></image>
+      <text>92</text>
+      <image src="../../image/view.png"></image>
+      <text>265</text>
+    </view>
+  </view>
+
+  <view class='posts-container'>
+    <view class='posts-author-date'>
+      <image src="../../image/favor.png"></image>
+      <text>Jul 10 2018</text>
+    </view>
+    <text class='posts-title'>重要复习节点</text>
+    <image class='posts-image' src="../../image/review_milestone.jpg" mode='widthFix'></image>
+    <text class='posts-content'>1）9月结束前。到9月份，英语二和政治跟着文都的暑期强化课程系统的学习一遍，把基础知识学扎实。专业课从头到尾复习一遍，整理好第一轮笔记。
+2）11月结束前。英语二和政治在秋季强化课程的学习下，进一步夯实基础，查缺补漏，自己不会的地方一定要学好。英语二真题二刷完，政治选择题部分的真题要充分把握，这期间文都的老师在上课的时候会着重讲解，所以不用害怕也不用着急，专业课必须完成二刷书本，将知识点完全弄明白。可以做一个知识框架，所以在这个时候，脑海里必须有一个系统的知识概括。
+3）12月到考研前。这一个阶段最为重要，英语要开始注重作文的背诵，真题也不可以丢在一旁，按时做题。政治在这个时候要狂背分析题，从历年真题上找到答题规律。专业课综合复习，要做到拿出一个知识点就可以全部背出来。总之呢，就是各科综合推进，不断重复记忆。</text>
+    <view class='posts-like'>
+      <image src="../../image/chat.png"></image>
+      <text>99</text>
+      <image src="../../image/view.png"></image>
+      <text>165</text>
+    </view>
+  </view>
+</view>

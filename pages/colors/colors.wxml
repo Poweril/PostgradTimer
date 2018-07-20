@@ -1,0 +1,13 @@
+<!--<view style="background:{{viewBg}};color:white;height:100px;">换背景颜色的</view>-->
+<radio-group class="radio-group" bindchange="changeTheme">
+  <radio display='none' class="section panel" wx:for="{{themes}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+    <view class="section_title" style='background: {{item.color}}'>{{item.title}} </view>
+    <view class="section_text" >{{item.text}} </view>
+  </radio>
+</radio-group>
+<!--<button class="button-style" type="primary" bindtap="listenerButtonPlay">播放</button>
+<button class="button-style" type="primary" bindtap="listenerButtonPause">暂停</button>
+<button class="button-style" type="primary" bindtap="listenerButtonSeek">设置播放进度</button>
+<button class="button-style" type="primary" bindtap="listenerButtonStop">停止播放</button>
+<button class="button-style" type="primary" bindtap="listenerButtonGetPlayState">获取播放状态</button>
+-->

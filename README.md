@@ -1,2 +1,3 @@
-# PostgradTimer
-A tomato clock for students aiming for NEEP.
+# 微信小程序--番茄时钟
+##### 演示：
+![](./image/view.gif)
